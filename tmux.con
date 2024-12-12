@@ -1,0 +1,19 @@
+set -g status-bg '#CFB53B'
+#set -g status-bg white
+set -g status-right '(#(hostname)) | %H:%M %Y.%m.%d#[default]'
+set -g status-right '%H:%M %Y.%m.%d#[default]'
+set -g message-style "bg=red,fg=white"
+set -g pane-active-border-style "bg=default,fg=red"
+
+# split panes using _ and |
+bind | split-window -h -c "#{pane_current_path}"
+bind _ split-window -v -c "#{pane_current_path}"
+unbind '"'
+unbind %
+
+# don't rename windows automatically
+set-option -g allow-rename off
+
+# terminal key binds
+set -g mode-keys emacs
+set -g status-keys emacs
