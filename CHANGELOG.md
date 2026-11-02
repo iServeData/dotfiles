@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-02
+
+- MIT license, CONTRIBUTING.md and SECURITY.md.
+
 ## 2026-10-16
 
 - README: what each dotfile sets up, requirements, how to deploy, update and remove them, and notes for
